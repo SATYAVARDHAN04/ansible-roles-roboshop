@@ -12,6 +12,47 @@ ansible-playbook -i inventory.ini -e componenet=mongodb main.yaml
 ansible-playbook -i inventory.ini -e componenet=catalogue main.yaml
 ```
 
+## 3. MYSQL ROLE
+
+```bash
+ansible-playbook -i inventory.ini -e componenet=mysql main.yaml
+```
+
+## 4. RABBITMQ ROLE
+
+```bash
+ansible-playbook -i inventory.ini -e componenet=rabbitmq main.yaml
+```
+
+## 5. USER ROLE
+
+```bash
+ansible-playbook -i inventory.ini -e componenet=user main.yaml
+```
+
+## 6. PAYMENT ROLE
+
+```bash
+ansible-playbook -i inventory.ini -e componenet=payment main.yaml
+```
+
+## 7. CART ROLE
+
+```bash
+ansible-playbook -i inventory.ini -e componenet=cart main.yaml
+```
+
+## 8. SHIPPING ROLE
+
+```bash
+ansible-playbook -i inventory.ini -e componenet=shipping main.yaml
+```
+
+## 9. REDIS ROLE
+
+```bash
+ansible-playbook -i inventory.ini -e componenet=redis main.yaml
+```
 ## 10. FRONTEND ROLE
 
 ```bash
