@@ -19,8 +19,3 @@
     src: /tmp/catalogue.zip
     dest: /app
     remote_src: yes
-
-- name: downloading the dependencies
-  community.general.npm:
-    path: /app
-    state: present
