@@ -11,3 +11,9 @@ ansible-playbook -i inventory.ini -e componenet=mongodb main.yaml
 ```bash
 ansible-playbook -i inventory.ini -e componenet=catalogue main.yaml
 ```
+
+## 3. FRONTEND ROLE
+
+```bash
+ansible-playbook -i inventory.ini -e componenet=frontend main.yaml
+```
