@@ -1,5 +1,5 @@
-- name: Configuring Mongodb
-  hosts: mongodb
+- name: Configuring "{{ component }}"
+  hosts: "{{ component }}"
   become: yes
   roles:
-    - mongodb
+    - "{{ component }}"
