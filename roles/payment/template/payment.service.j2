@@ -11,8 +11,8 @@ Environment=USER_HOST={{ USER_HOST }}
 Environment=USER_PORT={{ USER_PORT }}
 Environment=AMQP_HOST={{ AMQP_HOST }}
 // highlight-end
-Environment=AMQP_USER=roboshop
-Environment=AMQP_PASS=roboshop123
+Environment=AMQP_USER={{ AMQP_USER }}
+Environment=AMQP_PASS={{ AMQP_PASS }}
 
 ExecStart=/usr/local/bin/uwsgi --ini payment.ini
 ExecStop=/bin/kill -9 $MAINPID
