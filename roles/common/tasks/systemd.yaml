@@ -1,14 +1,14 @@
-- name: Copying catalogue service file
+- name: Copying "{{ component }}" service file
   ansible.builtin.template:
-    src: catalogue.service.j2
-    dest: /etc/systemd/system/catalogue.service
+    src: "{{ component }}.service.j2"
+    dest: /etc/systemd/system/"{{ component }}".service
 
-- name: Catalogue deamon reloading
+- name: "{{ component }} deamon reloading"
   ansible.builtin.systemd:
     daemon-reload: true
 
-- name: Starting and enabling catalogue service
+- name: Starting and enabling "{{ component }}" service
   ansible.builtin.service:
-    name: catalogue
+    name: "{{ component }}"
     state: restarted
     enabled: yes
