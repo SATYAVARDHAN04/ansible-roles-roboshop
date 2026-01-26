@@ -12,7 +12,7 @@ ansible-playbook -i inventory.ini -e componenet=mongodb main.yaml
 ansible-playbook -i inventory.ini -e componenet=catalogue main.yaml
 ```
 
-## 3. FRONTEND ROLE
+## 10. FRONTEND ROLE
 
 ```bash
 ansible-playbook -i inventory.ini -e componenet=frontend main.yaml
@@ -49,4 +49,9 @@ ansible-vault delete filename.yaml
 
 ```bash
 ansible-vault rekey filename.yaml
+```
+## AFTER SETTING VAULT PASSWORD AND FILES ON ec2 MACHINES RUN THIS COMMAND
+
+```bash
+ansible-playbook -i inventory.ini -e componenet=mysql mysql.yaml --ask-vault-pass
 ```
